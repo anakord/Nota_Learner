@@ -1,0 +1,61 @@
+<DOCTYPE! html>
+
+<html>
+	<head>
+		<title> NotaLearner - онлайн тренажер для наработки навыка чтения нот </title>
+		<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+	<body>
+
+		<form name="f_menu" class="menu_panel">
+      <p> Режим тренировки:
+				<select id="sl_learning_mode" required="required">
+					<option value=""> Выберите режим... </option>
+					<option value="free"> Свободный </option>
+				</select>
+				<button type="button" name="b_start"> Начать </button>
+			</p>
+		</form>
+	<div class="learn_panel">
+      <canvas id="cnv_nota_panel" class="nota__panel">  </canvas>
+
+	  	<div id="piano" class="piano__panel">
+
+      	<div id="C1" class="key white"></div>
+        <div id="Cd1" class="key black"></div>
+        <div id="D1" class="key white"></div>
+        <div id="Dd1" class="key black"></div>
+        <div id="E1" class="key white"></div>
+        <div id="F1" class="key white"></div>
+        <div id="Fd1" class="key black"></div>
+        <div id="G1" class="key white"></div>
+        <div id="Gd1" class="key black"></div>
+        <div id="A1" class="key white"></div>
+        <div id="Ad1" class="key black"></div>
+        <div id="B1" class="key white"></div>
+
+        <div id="C2" class="key white"></div>
+        <div id="Cd2" class="key black"></div>
+        <div id="D2" class="key white"></div>
+        <div id="Dd2" class="key black"></div>
+        <div id="E2" class="key white"></div>
+        <div id="F2" class="key white"></div>
+        <div id="Fd2" class="key black"></div>
+        <div id="G2" class="key white"></div>
+        <div id="Gd2" class="key black"></div>
+        <div id="A2" class="key white"></div>
+        <div id="Ad2" class="key black"></div>
+        <div id="B2" class="key white"></div>
+
+			</div>
+	</div>
+	</body>
+
+    <!-- Подключение внешнего файла со скриптами -->
+
+    <script src="draw_script.js"> </script>
+    <script src="logic_script.js"> </script>
+		<script src="controller_script.js"> </script>
+</html>

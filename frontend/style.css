@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu_panel { 
+  width: 100%;
+  height: 15%;
+  background: Blue;
+}
+
+.learn_panel {
+	width:100%;	
+	height: 85%;	
+	display: flex;
+  flex-direction: column;
+	background: Gray;
+}
+.nota__panel {
+  width: 55%;
+  height: 30%;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  background: White; 
+  outline: 2px solid Black; 
+}
+
+.piano__panel {
+	margin-top: auto;	
+	display: flex; 
+	justify-content: center;
+  align-content: space-between;
+  padding: 20px 30px;
+  background-color: Blue;
+	border: 4px solid Black; 
+}
+
+
+.white{
+	width: 8em;
+  height: 40vh;
+  background-color: white;
+  //-webkit-border-bottom-left-radius: 15px;
+  //-webkit-border-bottom-right-radius: 15px;
+  border: 1px solid Black;
+  cursor: pointer;
+}
+
+
+/* 										FOR ANIMATION THANKS Kosten
+						source: https://codepen.io/zornetru/pen/qKLPqa							*/
+
+
+
+.active {
+	--color-primary: red;
+  animation: an_play .5s ease;
+  animation-timing-function: steps(28);
+  //animation-fill-mode: backwards;
+}
+
+.right {
+	--color-primary: green;
+}
+
+@keyframes an_play {
+    from { background-color: white; }
+    50% { background-color: var(--color-primary); }
+    to { background-color: white; }
+}
+
+						
+.black{
+    width: 4em;
+    height: 25vh;
+    background-color: black;
+    margin-left:-2em;
+    margin-right:-2em;
+    z-index: 2;
+    -webkit-box-shadow: 8px 7px 4px -4px rgba(0,0,0,0.69);
+    -moz-box-shadow: 8px 7px 4px -4px rgba(0,0,0,0.69);
+    box-shadow: 8px 7px 4px -4px rgba(0,0,0,0.69);
+
+}
+
+.white.shadow {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+ }
